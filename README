@@ -1,0 +1,27 @@
+To install clone repository to your home dir. Create symlinks
+
+Installed plugins and how to use them
+
+closetag
+Use C-_ to close a nearest open tag. Work in HTML & XML
+
+Spellchecking
+Enable spell checking by hitting F5. Navigate to next misspelt word by ]s or [s
+to move backwards. Use z= to get a list of suggestions.
+
+In Insert mode, when the cursor is after a badly spelled word, you can use
+CTRL-X s to find suggestions. This works like Insert mode completion. Use
+CTRL-N to use the next suggestion, CTRL-P to go back.
+
+TODO
+NERD
+supertab
+NERD_commenter
+snipmate
+
+Notes
+Nie zainstalowane ale godne uwagi:
+https://github.com/rstacruz/sparkup
+http://code.google.com/p/vimwiki/
+https://github.com/samsonw/vim-task
+
