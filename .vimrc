@@ -224,6 +224,3 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " Highlights cursor line
 set cursorline
-
-" Adds syntax support for jquery
-au BufRead,BufNewFile *.js set ft=javascript syntax=jquery
