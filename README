@@ -16,7 +16,7 @@ CTRL-N to use the next suggestion, CTRL-P to go back.
 TODO
 NERD
 supertab
-NERD_commenter
+NERD_commenter - wyglada na to ze spowalnialo vim
 snipmate
 
 Notes
@@ -24,4 +24,4 @@ Nie zainstalowane ale godne uwagi:
 https://github.com/rstacruz/sparkup
 http://code.google.com/p/vimwiki/
 https://github.com/samsonw/vim-task
-
+http://www.catonmat.net/blog/vim-plugins-ragtag-allml-vim/ - zamiana za closetag
