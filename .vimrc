@@ -203,7 +203,7 @@ endfunction
 map <F5> :setlocal spell! spelllang=en_gb<cr>
 
 " Use F10 to toggle 'paste' mode
-set pastetoggle=<F10>
+set pastetoggle=<leader>9
 
 " HTML Settings
 " set 2 tab for html files
@@ -213,7 +213,7 @@ autocmd FileType html setlocal shiftwidth=2 tabstop=2
 let g:closetag_html_style=1
 
 " map <F7> to toggle NERDTree window
-nmap <silent> <F7> :NERDTreeToggle<CR>
+nmap <silent> <D-1> :NERDTreeToggle<CR>
 
 :let NERDTreeShowHidden=1
 :let NERDTreeQuitOnOpen=1
@@ -224,3 +224,20 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " Highlights cursor line
 set cursorline
+
+" Scroll when cursor gets within 3 characters of top/bottom edge
+set scrolloff=3
+
+" Load a tag file
+" Loads a tag file from ~/.vim.tags/, based on the argument provided. The
+" command "Ltag"" is mapped to this function.
+:function! LoadTags(file)
+:   let tagspath = $HOME . "/.vim.tags/" . a:file
+:   let tagcommand = 'set tags+=' . tagspath
+:   execute tagcommand
+:endfunction
+:command! -nargs=1 Ltag :call LoadTags("<args>")
+
+" These are tag files I've created; you may want to remove/change these for your
+" own usage.
+:call LoadTags("3663")
