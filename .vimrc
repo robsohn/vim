@@ -33,6 +33,9 @@ set encoding=utf-8
 " don't blink
 set novisualbell
 
+" Show line numbers
+set nu
+
 " Remember things between sessions
 "
 " '20  - remember marks for 20 previous files
@@ -212,11 +215,11 @@ autocmd FileType html setlocal shiftwidth=2 tabstop=2
 " HTML/XML tag closing macro - C-_ closes nearest open tag
 let g:closetag_html_style=1
 
-" map <F7> to toggle NERDTree window
+" map CMD 1 to toggle NERDTree window
 nmap <silent> <D-1> :NERDTreeToggle<CR>
 
 :let NERDTreeShowHidden=1
-:let NERDTreeQuitOnOpen=1
+":let NERDTreeQuitOnOpen=1
 :let NERDTreeChDirMode=2
 
 " Remove spaces at the end of line
@@ -235,9 +238,17 @@ set scrolloff=3
 :   let tagspath = $HOME . "/.vim.tags/" . a:file
 :   let tagcommand = 'set tags+=' . tagspath
 :   execute tagcommand
+"   Sets location for taglist
+:   let Tlist_Ctags_Cmd = tagspath
 :endfunction
 :command! -nargs=1 Ltag :call LoadTags("<args>")
 
 " These are tag files I've created; you may want to remove/change these for your
 " own usage.
 :call LoadTags("3663")
+
+" Set window of Taglist on right
+:let Tlist_Use_Right_Window = 1
+
+" map CMD 2 to toggle NERDTree window
+nmap <silent> <D-2> :TlistToggle<CR>

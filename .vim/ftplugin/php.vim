@@ -13,7 +13,4 @@ let php_folding = 0
 " Set up automatic formatting
 set formatoptions+=tcqlro
 
-" Show line numbers
-set nu
-
 autocmd BufNewFile,BufRead *.phtml set ft=php
