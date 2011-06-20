@@ -38,6 +38,8 @@ cd $dir
 exec ctags -f ~/.vim.tags/$name \
 -h ".php" -R \
 --exclude="\.svn" \
+--exclude="\.git" \
+--exclude="\.hg" \
 --totals=yes \
 --tag-relative=yes \
 --fields=+afkst \

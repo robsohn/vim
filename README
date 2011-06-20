@@ -2,6 +2,8 @@ To install clone repository to your home dir. Create symlinks
 
 Installed plugins and how to use them
 
+./ctags-gen.sh ~/Projects/<project name> <project alias>
+
 closetag
 Use C-_ to close a nearest open tag. Work in HTML & XML
 
