@@ -1,4 +1,8 @@
-" PHP Settings
+" PHP DOC Settings
+
+" Wether for PHP5 code PHP4 tags should be set, like @access,... (1|0)?
+let g:pdv_cfg_php4always = 0
+let g:pdv_cfg_Author = "Robert Raszczynski <raszczynski@gmail.com>"
 
 inoremap <C-P><ESC> :call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR>
@@ -14,3 +18,5 @@ let php_folding = 0
 set formatoptions+=tcqlro
 
 autocmd BufNewFile,BufRead *.phtml set ft=php
+
+
